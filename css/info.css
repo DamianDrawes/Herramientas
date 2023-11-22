@@ -1,0 +1,18 @@
+.navgrid{
+    top: 0;
+}
+
+.texto{
+    padding-top: 120px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    background-color: rgba(241, 241, 241, 0.356);
+    padding-top: 100px;
+}
+.texto li{
+    list-style: none;
+}
+.texto p,.texto ul,.texto li{
+    font-size: 20px;
+}

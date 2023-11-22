@@ -1,0 +1,27 @@
+.marcas{
+    width: 100%;
+    text-align: center;
+    margin: 5% 0;
+}
+.marcas h3{
+    font-size: 30px;
+    text-align: center;
+}
+.marcas img{
+    width: 40%;
+    margin: auto;
+}
+#bosch{
+    width: 60%;
+    box-shadow: 0 0 15px black;
+    margin-bottom: 5%;
+}
+
+@media screen and (max-width:600px){
+    #bosch{
+        width: 80%;
+    }
+    .marcas img{
+        width: 70%;
+    }
+}

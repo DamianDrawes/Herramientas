@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navgrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    position: fixed;
+    z-index: 4;
+    background-color:rgb(230, 230, 230);
+    border-top: 5px solid rgb(14, 14, 187);
+    box-shadow: 0 0 15px white;
+}
+.navgrid div{
+    display: flex;
+    width: auto;
+    height: auto;
+    z-index: 2;
+    align-items: center;
+    margin: auto;
+}
+.navgrid p{
+    font-size: 18px;
+    margin: 15px;
+}
+.navgrid img{
+    width: 30px;
+    height: auto;
+    margin: auto 20px;
+    cursor: pointer;
+}
+#logo{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+.navIcon{
+    position: relative;
+}
+#navBusc{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color:rgb(230, 230, 230);
+    border-radius: 5px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    overflow: hidden;
+    height: 0;
+    padding: 0 20px;
+}
+#navBusc div{
+    position: relative;
+}
+#navBusc div p{
+    position: absolute;
+    right: -10px;
+    padding: 0 5px;
+    background-color:rgb(230, 230, 230);
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: 'Arial';
+}
+#navBusc div input{
+    width: 250px;
+    height: 20px;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px){
+    .navgrid{
+        display: block;
+    }
+    .navgrid p{
+        font-size: 15px;
+        margin: auto;
+    }
+    .navgrid a{
+        margin: auto;
+    }
+    .navgrid img{
+        width: 20px;
+        margin: 5px auto;
+    }
+    #logo{
+        width: 120px;
+        margin: 5px auto;
+    }
+}
