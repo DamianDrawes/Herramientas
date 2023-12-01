@@ -1,30 +1,51 @@
 h2{
-    margin-top: 5%;
     text-align: center;
     font-size: 40px;
+    cursor: pointer;
+}
+.titulos{
+    display: flex;
+    padding-top: 130px;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    gap: 0 110px;
 }
 nav{
     top: 0;
 }
-.conteinerbox{
+.visible{
     width: 80%;
+    margin-left: -100%;
+    margin: auto;
+    overflow: hidden;
+}
+.conteinerbox{
+    width: 300%;
+    display: flex;
     margin: auto;
     position: relative;
+    transition: all 0.5s ease;
 }
 
 .box{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    gap: 80px;
+    margin: 50px;
 }
 .box div{
-    margin: 50px 50px;
     padding: 10px;
     box-shadow: 0 0 5px black;
 }
 .producto{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
 }
 
 .box p{
@@ -35,6 +56,7 @@ nav{
 }
 .boxProducto{
     position: relative;
+    height: 300px;
 }
 .tickoff{
     position: absolute;
@@ -75,4 +97,58 @@ nav{
 }
 .boxProducto:hover .precio{
     transform: scale(2);
+}
+.ico{
+    display: flex;
+    align-items: center;
+}
+#boxP{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+    gap: 0 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 12px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 5px;
+}
+#boxP div{
+    width: auto;
+}
+.iconP{
+    width: 25px;
+    height: auto;
+}
+#boxP p{
+    margin-left: 15px;
+    font-size: 1.4rem;
+}
+#principals{
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+#texdiv{
+    background-color: rgba(240, 248, 255, 0.521);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 15px;
+}
+
+@media screen and (max-width:800px){
+    #boxP{
+        width: 90%;
+        display: block;
+        text-align: center;
+    }
+    #principals{
+        width: 90%;
+        margin-bottom: 25px;
+    }
+    .visible{
+        width: 90%;
+        margin: auto;
+    }
 }

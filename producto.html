@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/producto.css">
+    <script src="js/CargarFavorito.js"></script>
 </head>
 <body>
     <nav class="navgrid">
@@ -35,90 +36,99 @@
             <script src="js/buscador.js"></script>
         </div>
     </nav>
-    <h2>Productos</h2>
-    <div class="conteinerbox">
+    <section class="visible" id="visible">
+    <div class="titulos">
+        <h2 id="productoButon">Productos</h2>
+        <h2 id="favoritoButon">Favoritos</h2>
+        <script src="js/prodFav.js"></script>
+    </div>
+    <div class="conteinerbox" id="conteinerbox">
         <div class="box" id="box">
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (0).jpeg"></a>
+                <img class="producto" src="img/producto (0).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">Percutor</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (1).jpg"></a>
+                <img class="producto" src="img/producto (1).jpg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">Taladro</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (2).jpeg"></a>
+                <img class="producto" src="img/producto (2).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (2).jpg"></a>
+                <img class="producto" src="img/producto (2).jpg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">Sierra</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (3).jpeg"></a>
+                <img class="producto" src="img/producto (3).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (4).jpeg"></a>
+                <img class="producto" src="img/producto (4).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (5).jpeg"></a>
+                <img class="producto" src="img/producto (5).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (0).jpeg"></a>
+                <img class="producto" src="img/producto (0).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (1).jpg"></a>
+                <img class="producto" src="img/producto (1).jpg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (2).jpeg"></a>
+                <img class="producto" src="img/producto (2).jpeg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
             <div class="boxProducto">
-                <a href="producto.html"><img class="producto" src="img/producto (2).jpg"></a>
+                <img class="producto" src="img/producto (2).jpg">
                 <img class="tickoff" src="img/icon/star.png">
                 <img class="ntick" src="img/icon/star(1).png">
                 <p class="precio">$16.000</p>
-                <p>NOMBRE</p>
+                <p class="nombre">NOMBRE</p>
             </div>
+            <script>movP();</script>
             <script src="js/favorite.js"></script>
         </div>
-    </div>
-
+        <div class="box" id="boxF">
+        </div>
+        <div id="boxP">
+        </div>
+    </section>
     <footer>
         <div class="divfooter">
             <img id="logo" src="img/icon/logo.png">
@@ -146,7 +156,7 @@
                 <img class="red" src="img/icon/facebook.png">
                 <img class="red" src="img/icon/instagram.png">
                 <img class="red" src="img/icon/whatsapp.png">
-            </div>
+            </div>    
         </div>    
     </footer>
 </body>
