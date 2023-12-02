@@ -150,7 +150,7 @@ nav{
 #carrito:hover{
     transform: scale(1.2);
 }
-@media screen and (max-width:800px){
+@media screen and (max-width:900px){
     #boxP{
         width: 90%;
         display: block;
