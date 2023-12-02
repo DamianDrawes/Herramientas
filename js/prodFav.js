@@ -5,11 +5,11 @@ function armarSeleccion(info){
     miDiv.insertAdjacentHTML('beforeend',
         `<img id="principals" src="${info.imagen}">
         <div id="texdiv">
-            <p>${info.nombre}</p>
+            <p>Nombre: ${info.nombre}</p>
             <hr>
             <p>CODIGO</p>
             <hr>
-            <p>${info.precio}</p>
+            <p>Precio: ${info.precio}</p>
             <hr>
             <div class="ico">
                 <img class="iconP" src="img/icon/escudo.png">
@@ -23,9 +23,38 @@ function armarSeleccion(info){
                 <img class="iconP" src="img/icon/envio.png">
                 <p>Envíos a todo el país</p>
             </div>
+            <p id="carrito"> AÑADIR AL CARRITO</p>
         </div>
     </div>`);
 };
+function validadFavorito(){
+    let favoritosV= JSON.parse(localStorage.getItem("usuario"));
+    let productosV = document.querySelectorAll(".boxProducto");
+    productosV.forEach(function(ele){
+        let nombreV=ele.querySelector(".nombre");
+        var bandera= 0;
+        favoritosV.forEach(function(fv){
+            if(nombreV.textContent===fv.nombre){
+                let colocar=ele.querySelector(".tickoff");
+                let colocar2=ele.querySelector(".tickon");
+                if(colocar!=null){
+                bandera=bandera+1;
+                colocar.classList.remove("tickoff");
+                colocar.classList.add("tickon");
+                console.log(fv.nombre);
+                }
+                if(colocar2!=null){
+                    bandera=bandera+1;
+                }
+            }
+        });
+        let colocar2=ele.querySelector(".tickon");
+        if(colocar2!=null && bandera===0){
+        colocar2.classList.remove("tickon");
+        colocar2.classList.add("tickoff");
+        }
+    });
+}
 function borrarP(){
     var contenedor2 = document.getElementById('boxP');
     while (contenedor2.firstChild) {
@@ -50,6 +79,7 @@ function movI(){
     contenerdor.style.marginLeft="0";
     producto.innerText="Productos";
     favorito.innerText="Favoritos";
+    validadFavorito();
 }
 function movP(){
     let prod=document.querySelectorAll(".producto");
