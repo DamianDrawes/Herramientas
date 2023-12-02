@@ -8,9 +8,6 @@ footer{
     box-shadow: 0 0 5px black;
 }
 
-.divfooter{
-    margin: 0 5%;
-}
 .divfooter img{
     filter: saturate(0);
 }

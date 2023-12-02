@@ -3,6 +3,10 @@ h2{
     font-size: 40px;
     cursor: pointer;
 }
+body{
+    width:100%;
+    height: 100%;
+}
 .titulos{
     display: flex;
     padding-top: 130px;
@@ -18,7 +22,6 @@ nav{
 }
 .visible{
     width: 80%;
-    margin-left: -100%;
     margin: auto;
     overflow: hidden;
 }
@@ -44,8 +47,8 @@ nav{
     box-shadow: 0 0 5px black;
 }
 .producto{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
 }
 
 .box p{

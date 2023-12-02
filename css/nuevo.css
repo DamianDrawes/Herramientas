@@ -13,7 +13,7 @@ h2{
 .box{
     display: flex;
     width: 100%;
-    margin-left: -280px;
+    margin-left: -170px;
 }
 .box div{
     margin: 50px 50px;
@@ -21,8 +21,8 @@ h2{
     box-shadow: 0 0 5px black;
 }
 .producto{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
 }
 
 .box p{
@@ -36,7 +36,7 @@ h2{
     top: 40%;
     transform: translateY(-50%);
     font-size: 30px;
-    padding: 5px 5px;
+    padding: 15px 8px;
     font-family:monospace;
     background-color: rgb(220, 220, 220);
     border-radius: 15px;
